@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config(); // Import dotenv to load .env file
 
 const app = express();
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT;
 
 app.use(express.json()); // To parse JSON bodies
 
